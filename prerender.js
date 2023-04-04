@@ -19,7 +19,7 @@ const routesToPrerender = fs
     for (const url of routesToPrerender) {
         const context = {}
         const appHtml = await render(url, context)
-        const html = template.replace(`<!--app-html-->`, appHtml)
+        const html = template.replace(`<!--ssr-outlet-->`, appHtml)
         const filePath = `dist/static${url === '/' ? '/index' : url}.html`
         fs.writeFileSync(absolutePath(filePath), html)
         console.log('pre-rendered:', filePath)
