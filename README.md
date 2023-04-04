@@ -1,4 +1,4 @@
-# React & Vite SSR & TailwindCSS & SCSS Example
+# React & Vite SSR & TailwindCSS & SCSS & Express Example
 
 ## Install dependencies
 ```bash
